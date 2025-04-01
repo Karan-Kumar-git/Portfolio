@@ -33,105 +33,107 @@
     </nav>
 
     <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h1 class="section-title">Get in Touch</h1>
-            
-            <!-- Quote Section -->
-            <div class="quote-container">
-                <!-- Quote content will be dynamically inserted by JavaScript -->
-            </div>
-            
-            <div class="contact-grid">
-                <!-- Contact Information -->
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <div class="info-items">
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <div class="info-content">
-                                <h3>Phone</h3>
-                                <p><a href="tel:7696030897">+91 7696030897</a></p>
+    <main>
+        <section class="contact-section page-transition">
+            <div class="container">
+                <h1 class="section-title">Get in Touch</h1>
+                
+                <!-- Quote Section -->
+                <div class="quote-container">
+                    <!-- Quote content will be dynamically inserted by JavaScript -->
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="info-content">
+                                    <h3>Phone</h3>
+                                    <p><a href="tel:7696030897">+91 7696030897</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info-content">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:karan90092u8y@gmail.com">karan90092u8y@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fab fa-github"></i>
+                                <div class="info-content">
+                                    <h3>GitHub</h3>
+                                    <p><a href="https://github.com/karan-kumar-git" target="_blank">karan-kumar-git</a></p>
+                                </div>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info-content">
-                                <h3>Email</h3>
-                                <p><a href="mailto:karan90092u8y@gmail.com">karan90092u8y@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <i class="fab fa-github"></i>
-                            <div class="info-content">
-                                <h3>GitHub</h3>
-                                <p><a href="https://github.com/karan-kumar-git" target="_blank">karan-kumar-git</a></p>
-                            </div>
+
+                        <div class="social-links-large">
+                            <a href="https://github.com/karan-kumar-git" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="mailto:karan90092u8y@gmail.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:7696030897" class="social-link">
+                                <i class="fas fa-phone"></i>
+                            </a>
                         </div>
                     </div>
 
-                    <div class="social-links-large">
-                        <a href="https://github.com/karan-kumar-git" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:karan90092u8y@gmail.com" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="tel:7696030897" class="social-link">
-                            <i class="fas fa-phone"></i>
-                        </a>
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h2>Send a Message</h2>
+                        <form action="process_contact.php" method="POST" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="error-message"></div>
+                            </div>
+                            <div class="form-status"></div>
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loader"></span>
+                            </button>
+                        </form>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="contact-form">
-                    <h2>Send a Message</h2>
-                    <form action="process_contact.php" method="POST" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="form-status"></div>
-                        <button type="submit" class="submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-loader"></span>
-                        </button>
-                    </form>
+                <!-- Google Maps -->
+                <div class="map-container">
+                    <h2>Location</h2>
+                    <div class="map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.0536827244!2d76.072876!3d28.643795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347f62e7%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1647689123456!5m2!1sen!2sin"
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
                 </div>
             </div>
-
-            <!-- Google Maps -->
-            <div class="map-container">
-                <h2>Location</h2>
-                <div class="map">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448196.0536827244!2d76.072876!3d28.643795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347f62e7%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1647689123456!5m2!1sen!2sin"
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -142,6 +144,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/page-transition.js"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const form = document.getElementById('contactForm');

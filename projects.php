@@ -33,113 +33,115 @@
     </nav>
 
     <!-- Projects Section -->
-    <section class="projects-section">
-        <div class="container">
-            <h1 class="section-title">My Projects</h1>
-            
-            <!-- Quote Section -->
-            <div class="quote-container">
-                <!-- Quote content will be dynamically inserted by JavaScript -->
-            </div>
-            
-            <!-- AI Projects Section -->
-            <div class="projects-category">
-                <h2 class="category-title">
-                    <i class="fas fa-robot"></i>
-                    AI & Machine Learning Projects
-                </h2>
-                <div class="projects-grid">
-                    <div class="project-card coming-soon">
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>AI Chat Assistant</h3>
-                            <p>An intelligent chatbot powered by advanced language models</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>OpenAI API</span>
-                                <span>NLP</span>
+    <main>
+        <section class="projects-section page-transition">
+            <div class="container">
+                <h1 class="section-title">My Projects</h1>
+                
+                <!-- Quote Section -->
+                <div class="quote-container">
+                    <!-- Quote content will be dynamically inserted by JavaScript -->
+                </div>
+                
+                <!-- AI Projects Section -->
+                <div class="projects-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-robot"></i>
+                        AI & Machine Learning Projects
+                    </h2>
+                    <div class="projects-grid">
+                        <div class="project-card coming-soon">
+                            <div class="project-icon">
+                                <i class="fas fa-brain"></i>
                             </div>
-                            <div class="project-status">
-                                <span class="status-badge">Coming Soon</span>
+                            <div class="project-content">
+                                <h3>AI Chat Assistant</h3>
+                                <p>An intelligent chatbot powered by advanced language models</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>OpenAI API</span>
+                                    <span>NLP</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge">Coming Soon</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="project-card coming-soon">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Predictive Analytics Tool</h3>
-                            <p>Machine learning model for business forecasting</p>
-                            <div class="project-tech">
-                                <span>Python</span>
-                                <span>TensorFlow</span>
-                                <span>Data Analysis</span>
+                        <div class="project-card coming-soon">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-line"></i>
                             </div>
-                            <div class="project-status">
-                                <span class="status-badge">Coming Soon</span>
+                            <div class="project-content">
+                                <h3>Predictive Analytics Tool</h3>
+                                <p>Machine learning model for business forecasting</p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>TensorFlow</span>
+                                    <span>Data Analysis</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge">Coming Soon</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- General Projects Section -->
-            <div class="projects-category">
-                <h2 class="category-title">
-                    <i class="fas fa-code"></i>
-                    General Projects
-                </h2>
-                <div class="projects-grid">
-                    <div class="project-card coming-soon">
-                        <div class="project-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Portfolio Website</h3>
-                            <p>A modern, responsive portfolio website</p>
-                            <div class="project-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
+                <!-- General Projects Section -->
+                <div class="projects-category">
+                    <h2 class="category-title">
+                        <i class="fas fa-code"></i>
+                        General Projects
+                    </h2>
+                    <div class="projects-grid">
+                        <div class="project-card coming-soon">
+                            <div class="project-icon">
+                                <i class="fas fa-mobile-alt"></i>
                             </div>
-                            <div class="project-status">
-                                <span class="status-badge">In Progress</span>
+                            <div class="project-content">
+                                <h3>Portfolio Website</h3>
+                                <p>A modern, responsive portfolio website</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge">In Progress</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="project-card coming-soon">
-                        <div class="project-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <div class="project-content">
-                            <h3>Database Management System</h3>
-                            <p>Efficient database management solution</p>
-                            <div class="project-tech">
-                                <span>SQL</span>
-                                <span>Python</span>
-                                <span>Database Design</span>
+                        <div class="project-card coming-soon">
+                            <div class="project-icon">
+                                <i class="fas fa-database"></i>
                             </div>
-                            <div class="project-status">
-                                <span class="status-badge">Coming Soon</span>
+                            <div class="project-content">
+                                <h3>Database Management System</h3>
+                                <p>Efficient database management solution</p>
+                                <div class="project-tech">
+                                    <span>SQL</span>
+                                    <span>Python</span>
+                                    <span>Database Design</span>
+                                </div>
+                                <div class="project-status">
+                                    <span class="status-badge">Coming Soon</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Coming Soon Message -->
-            <div class="coming-soon-message">
-                <i class="fas fa-rocket"></i>
-                <h3>More Projects Coming Soon!</h3>
-                <p>I'm constantly working on new projects to enhance my skills and create innovative solutions.</p>
+                <!-- Coming Soon Message -->
+                <div class="coming-soon-message">
+                    <i class="fas fa-rocket"></i>
+                    <h3>More Projects Coming Soon!</h3>
+                    <p>I'm constantly working on new projects to enhance my skills and create innovative solutions.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -150,5 +152,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/page-transition.js"></script>
 </body>
 </html> 

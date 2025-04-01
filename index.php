@@ -30,24 +30,26 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hi, I'm <span class="highlight">Karan Kumar</span></h1>
-                <h2>BCA Student & Tech Enthusiast</h2>
-                <p>Passionate about AI, API Integration, and Cybersecurity</p>
-                <div class="cta-buttons">
-                    <a href="about.php" class="btn primary">Learn More</a>
-                    <a href="contact.php" class="btn secondary">Get in Touch</a>
+    <main>
+        <section class="hero page-transition">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Karan Kumar</span></h1>
+                    <h2>BCA Student & Tech Enthusiast</h2>
+                    <p>Passionate about AI, API Integration, and Cybersecurity</p>
+                    <div class="cta-buttons">
+                        <a href="about.php" class="btn primary">Learn More</a>
+                        <a href="contact.php" class="btn secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="logo1.jpeg" alt="Karan Kumar">
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="image-container">
-                    <img src="logo1.jpeg" alt="Karan Kumar">
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Quote Section -->
     <div class="quote-container">
@@ -90,5 +92,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/page-transition.js"></script>
 </body>
 </html> 
