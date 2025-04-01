@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Karan Kumar</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -49,47 +49,112 @@
                         
                         <div class="skills-container">
                             <h2>Technical Skills</h2>
-                            <div class="skills-grid">
-                                <div class="skill-item">
-                                    <i class="fab fa-python"></i>
-                                    <h3>Python</h3>
-                                    <div class="skill-level">
-                                        <div class="progress" style="width: 90%"></div>
+                            
+                            <!-- Programming Languages -->
+                            <div class="skill-category">
+                                <h3>Programming Languages</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-python"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h4>Python</h4>
+                                            <div class="skill-details">
+                                                <p>Strong foundation in Python programming with expertise in data structures, algorithms, and OOP.</p>
+                                                <div class="skill-stats">
+                                                    <span>100+ Projects</span>
+                                                    <span>5+ Years</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h4>C/C++</h4>
+                                            <div class="skill-details">
+                                                <p>Proficient in system programming and low-level development.</p>
+                                                <div class="skill-level">
+                                                    <div class="progress" style="width: 85%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-code"></i>
-                                    <h3>C/C++</h3>
-                                    <div class="skill-level">
-                                        <div class="progress" style="width: 85%"></div>
+                            </div>
+
+                            <!-- Web Development -->
+                            <div class="skill-category">
+                                <h3>Web Development</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-html5"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h4>HTML5</h4>
+                                            <div class="skill-details">
+                                                <p>Expert in semantic HTML and modern web standards.</p>
+                                                <div class="skill-level">
+                                                    <div class="progress" style="width: 95%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-card">
+                                        <div class="skill-icon">
+                                            <i class="fab fa-css3-alt"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h4>CSS3</h4>
+                                            <div class="skill-details">
+                                                <p>Advanced styling with modern CSS features and responsive design.</p>
+                                                <div class="skill-level">
+                                                    <div class="progress" style="width: 90%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-html5"></i>
-                                    <h3>HTML5</h3>
-                                    <div class="skill-level">
-                                        <div class="progress" style="width: 95%"></div>
+                            </div>
+
+                            <!-- Other Skills -->
+                            <div class="skill-category">
+                                <h3>Other Skills</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-card">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h4>Databases</h4>
+                                            <div class="skill-details">
+                                                <p>Experience with SQL and NoSQL databases.</p>
+                                                <div class="skill-level">
+                                                    <div class="progress" style="width: 85%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fab fa-css3-alt"></i>
-                                    <h3>CSS3</h3>
-                                    <div class="skill-level">
-                                        <div class="progress" style="width: 90%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-database"></i>
-                                    <h3>Databases</h3>
-                                    <div class="skill-level">
-                                        <div class="progress" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <i class="fas fa-robot"></i>
-                                    <h3>AI & Automation</h3>
-                                    <div class="skill-level">
-                                        <div class="progress" style="width: 80%"></div>
+
+                                    <div class="skill-card">
+                                        <div class="skill-icon">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="skill-info">
+                                            <h4>Basic AI & ML</h4>
+                                            <div class="skill-details">
+                                                <p>Understanding of fundamental AI/ML concepts and basic implementations.</p>
+                                                <div class="skill-level">
+                                                    <div class="progress" style="width: 60%"></div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -113,6 +178,11 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="education-section">
+                    <!-- ... existing education section code ... -->
                 </div>
             </div>
         </section>
