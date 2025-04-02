@@ -56,29 +56,87 @@
         <!-- Quote content will be dynamically inserted by JavaScript -->
     </div>
 
-    <!-- Skills Preview -->
+    <!-- Technical Expertise -->
     <section class="skills-preview">
         <h2>Technical Expertise</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>Programming</h3>
-                <p>Python, C, C++</p>
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Python Development</h3>
+                    <p>Strong foundation in Python programming with expertise in data structures, algorithms, and OOP.</p>
+                    <div class="skill-stats">
+                        <span>100+ Projects</span>
+                        <span>5+ Years</span>
+                    </div>
+                </div>
             </div>
+
             <div class="skill-card">
-                <i class="fas fa-robot"></i>
-                <h3>AI & Automation</h3>
-                <p>Prompt Engineering, API Integration</p>
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>C/C++</h3>
+                    <p>Proficient in system programming and low-level development with strong problem-solving skills.</p>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
             </div>
+
             <div class="skill-card">
-                <i class="fas fa-shield-alt"></i>
-                <h3>Cybersecurity</h3>
-                <p>Security Best Practices</p>
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>HTML5</h3>
+                    <p>Expert in semantic HTML and modern web standards with focus on accessibility and SEO.</p>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
             </div>
+
             <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>Databases</h3>
-                <p>SQL, Database Management</p>
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>CSS3</h3>
+                    <p>Advanced styling with modern CSS features, animations, and responsive design principles.</p>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Databases</h3>
+                    <p>Experience with SQL and NoSQL databases, data modeling, and query optimization.</p>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="skill-info">
+                    <h3>Basic AI & ML</h3>
+                    <p>Understanding of fundamental AI/ML concepts and basic implementations.</p>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -86,7 +144,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-bottom">
-            <p>&copy; 2024 Karan Kumar. All rights reserved.</p>
+            <p>&copy; <?php echo date('Y'); ?> Karan Kumar. All rights reserved.</p>
         </div>
     </footer>
 
