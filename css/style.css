@@ -59,7 +59,7 @@ body::before {
     pointer-events: none;
 }
 
-/* Page Transitions */
+/* Enhanced Page Transitions */
 .page-transition {
     opacity: 0;
     transform: translateY(20px);
@@ -108,14 +108,13 @@ body::before {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--primary-color);
-    transition: var(--transition);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 .logo:hover img {
-    transform: scale(1.1) rotate(5deg);
-    border-color: var(--secondary-color);
-    box-shadow: 0 8px 12px var(--shadow-color);
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .logo-text {
@@ -143,15 +142,15 @@ body::before {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    transition: var(--transition);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
-.nav-links a::before {
+.nav-links a::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -166,7 +165,7 @@ body::before {
     background: var(--bg-color);
 }
 
-.nav-links a:hover::before {
+.nav-links a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
@@ -271,6 +270,8 @@ body::before {
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
 }
 
 .btn.primary {
@@ -286,6 +287,40 @@ body::before {
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+/* Enhanced Element Animations */
+.skill-card, .project-card, .certification-card {
+    animation: slideIn 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered Animation for Cards */
+.skills-grid .skill-card:nth-child(1) { animation-delay: 0.1s; }
+.skills-grid .skill-card:nth-child(2) { animation-delay: 0.2s; }
+.skills-grid .skill-card:nth-child(3) { animation-delay: 0.3s; }
+.skills-grid .skill-card:nth-child(4) { animation-delay: 0.4s; }
+.skills-grid .skill-card:nth-child(5) { animation-delay: 0.5s; }
+.skills-grid .skill-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Enhanced Hover Animations */
+.skill-icon, .project-icon, .cert-icon {
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.skill-icon:hover, .project-icon:hover, .cert-icon:hover {
+    transform: scale(1.2) rotate(10deg);
 }
 
 /* Skills Preview */
@@ -436,7 +471,7 @@ body::before {
     height: 100%;
     background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
     border-radius: 3px;
-    transition: width 1s ease-in-out;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Footer Styles */
@@ -448,6 +483,18 @@ body::before {
     text-align: center;
     box-shadow: 0 -4px 30px var(--shadow-color);
     border-top: 1px solid var(--border-color);
+    animation: slideUp 0.6s ease-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .footer-bottom {
@@ -508,7 +555,7 @@ body::before {
         flex-direction: column;
         align-items: center;
         padding: 2rem;
-        transition: 0.3s ease;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         overflow-y: auto;
         z-index: 999;
     }
@@ -539,6 +586,10 @@ body::before {
     /* Remove body overflow hidden when menu is active */
     body.menu-active {
         overflow: hidden;
+    }
+
+    .hamburger span {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
@@ -628,6 +679,20 @@ body::before {
     text-align: center;
     margin-bottom: 3rem;
     color: var(--text-color);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-content {
@@ -1684,6 +1749,7 @@ body::before {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
 .quote-content {
@@ -1704,6 +1770,11 @@ body::before {
     margin-bottom: 1rem;
     line-height: 1.6;
     font-style: italic;
+    transition: all 0.3s ease;
+}
+
+.quote-text:hover {
+    transform: scale(1.02);
 }
 
 .quote-author {
