@@ -38,7 +38,7 @@ body {
     transition: var(--transition);
     min-height: 100vh;
     position: relative;
-    background: url('../bg.jpg') no-repeat center center;
+    /* background: url('../bg.jpg') no-repeat center center; */
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
